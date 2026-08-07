@@ -1,0 +1,23 @@
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  name: api-gateway
+  namespace: staging
+  labels:
+    app: api-gateway
+    app.kubernetes.io/part-of: company-platform
+
+spec:
+  ingressClassName: traefik
+
+  rules:
+    - host: api.staging.company.local
+      http:
+        paths:
+          - path: /
+            pathType: Prefix
+            backend:
+              service:
+                name: api-gateway
+                port:
+                  number: 80
