@@ -26,7 +26,7 @@ spec:
       containers:
         - name: payment-service
 
-          image: ghcr.io/thaianhvu29/payment-service:sha-8f190ff33d14ac8526b90dd99eac5d71ea03f4d8
+          image: ghcr.io/thaianhvu29/payment-service:sha-b8dc5d63a1d44f7b5b87ba0bf8ab79ce4064066a
           imagePullPolicy: IfNotPresent
 
           ports:
