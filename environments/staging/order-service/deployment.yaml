@@ -26,7 +26,7 @@ spec:
       containers:
         - name: order-service
 
-          image: ghcr.io/thaianhvu29/order-service:sha-f31ea6db8785781cbe3064d633650dd25c4d68c2
+          image: ghcr.io/thaianhvu29/order-service:sha-8f190ff33d14ac8526b90dd99eac5d71ea03f4d8
           imagePullPolicy: IfNotPresent
 
           ports:
