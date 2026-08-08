@@ -25,7 +25,7 @@ spec:
       containers:
         - name: api-gateway
 
-          image: ghcr.io/thaianhvu29/api-gateway:sha-b8dc5d63a1d44f7b5b87ba0bf8ab79ce4064066a
+          image: ghcr.io/thaianhvu29/api-gateway:sha-f72dc8fe0d01ab82ba50641e7035ca69f7319baf
           imagePullPolicy: IfNotPresent
 
           ports:
