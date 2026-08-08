@@ -1,5 +1,5 @@
 # Lightweight kube-prometheus-stack configuration
-# Target: single-node k3s lab / staging cluster
+# Target: single-node k3s staging cluster
 
 alertmanager:
   enabled: false
@@ -13,11 +13,11 @@ grafana:
 
   resources:
     requests:
-      cpu: 50m
-      memory: 128Mi
+      cpu: 100m
+      memory: 192Mi
     limits:
-      cpu: 200m
-      memory: 256Mi
+      cpu: 500m
+      memory: 512Mi
 
 prometheus:
   enabled: true
@@ -71,7 +71,7 @@ prometheus-node-exporter:
       cpu: 100m
       memory: 96Mi
 
-# k3s does not expose these control-plane components
+# k3s does not expose these components
 # in the same way as a standard kubeadm cluster.
 kubeEtcd:
   enabled: false
